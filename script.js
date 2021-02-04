@@ -83,8 +83,6 @@ function handleCardClick(e) {
   // ** 
   if(card1 && card2) {
     noClicking = true; 
-  };
-
   // if match; classNames are equal  
   if(card1.className === card2.className) {
     // cardsFlipped = cardsFlipped + 2; 
@@ -113,12 +111,11 @@ function handleCardClick(e) {
       card2 = null; 
     }, 1000)
   }; 
-
+};
   // check if number of cards flipped equals to number of colors
   if(cardsFlipped === COLORS.length) {
     alert('Finished!'); 
   }
-}
 
 // when the DOM loads
 createDivsForColors(shuffledColors);
